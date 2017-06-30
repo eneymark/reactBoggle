@@ -49,7 +49,7 @@ class App extends Component {
       return board;
   }
   async checkWordClick(event){
-      if(this.state.currentWord.length === 0){
+      if(this.state.currentWord.length === 0 || this.state.isGameOver){
           return false;
       }
       if(this.state.words.indexOf(this.state.currentWord) ===-1) {
@@ -104,8 +104,7 @@ class App extends Component {
     return (
 
         <div className="App">
-          <div className="currentWord">{this.state.currentWord}</div>
-          <div><input className="button" type="button" onClick={this.checkWordClick.bind(this)} value="check word"/></div>
+            <div className="currentWord"><p>{this.state.currentWord}</p><input className="button" type="button" onClick={this.checkWordClick.bind(this)} value="check word"/></div>
             <div className={this.state.isGameOver?'error':''}>{this.state.isGameOver?'time\'s up, game over':''}</div>
             <div className={this.state.status.success?'success':this.state.status.error?'error':''}>{this.state.status.success?'was a word':this.state.status.error?'nope':''}</div>
             <div className="container">
@@ -131,7 +130,7 @@ class App extends Component {
                     <p>points</p>
                     <ul>
                         {this.state.words.map(word=>{
-                           return ( <li key={word}>{word} ({word.length} pts.)</li> )
+                           return ( <li key={word}>{word} <span className="points">({word.length} pts.)</span></li> )
                         })}
                     </ul>
                 </div>

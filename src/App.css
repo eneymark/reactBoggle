@@ -1,7 +1,18 @@
 .App {
   text-transform: uppercase;
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
 }
+.App .currentWord p {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: inline-block;
+  width: 364px;
+  border: 1px solid blue;
+}
+
 .App .success {
   background-color: chartreuse;
   color: green;
@@ -17,21 +28,42 @@
 .App .container table{
   float: left;
 }
+.App .container .words ul {
+  margin-top: 0px;
+
+}
 .App .container .words{
   float: right;
+  max-width: 205px;
 }
 .App .currentWord {
   text-align: center;
 }
-.App .container .words, .App .currentWord, .App .button{
+
+.App .button {
+  font-size: 30px;
+  color: black;
+  margin: 10px;
+  margin-bottom: 15px;
+}
+.App .container .words, .App .currentWord {
   color: #50B1F2;
   font-size: 50px;
   font-family: "Arial Rounded MT Bold";
   font-weight: bold;
 }
-
+.App .container .words li > span {
+  color:#fcce4a;
+  font-size: 14px;
+}
+.App .container .words li{
+  list-style: none;
+  font-size: 20px;
+}
 .App .container .words p {
   background-color: #fcce4a;
+  margin-top:0px;
+  font-size:25px;
 }
 .App .board a {
   display: inline-block;
