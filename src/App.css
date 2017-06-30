@@ -1,0 +1,65 @@
+.App {
+  text-transform: uppercase;
+  text-align: center;
+}
+.App .success {
+  background-color: chartreuse;
+  color: green;
+}
+.App .error {
+  background-color: peachpuff;
+  color: orangered;
+}
+.App .container {
+  text-align: center;
+}
+
+.App .container table{
+  float: left;
+}
+.App .container .words{
+  float: right;
+}
+.App .currentWord {
+  text-align: center;
+}
+.App .container .words, .App .currentWord, .App .button{
+  color: #50B1F2;
+  font-size: 50px;
+  font-family: "Arial Rounded MT Bold";
+  font-weight: bold;
+}
+
+.App .container .words p {
+  background-color: #fcce4a;
+}
+.App .board a {
+  display: inline-block;
+  border:1px solid #EEF2E6;
+  color: #395BE3;
+  border-radius: 11px 10px 10px 10px;
+  -webkit-border-radius: 11px 10px 10px 10px;
+  -moz-border-radius: 11px 10px 10px 10px;
+  font-family: "Arial Rounded MT Bold";
+  font-weight: bold;
+  width: 60px;
+  height: 60px;
+  text-decoration: none;
+  font-size: 50px;
+  padding: 20px 20px;
+  box-shadow: inset 0 1px 0 0 #DBDBDB,inset 0 -1px 0 0 #E3C852,inset 0 0 0 1px #FCE88D,0 2px 4px 0 #D4D4D4;
+  -moz-box-shadow: inset 0 1px 0 0 #DBDBDB,inset 0 -1px 0 0 #E3C852,inset 0 0 0 1px #FCE88D,0 2px 4px 0 #D4D4D4;
+  -webkit-box-shadow: inset 0 1px 0 0 #DBDBDB,inset 0 -1px 0 0 #E3C852,inset 0 0 0 1px #FCE88D,0 2px 4px 0 #D4D4D4;
+  text-shadow: 4px 3px 5px #BFC9C6;
+  background-image: linear-gradient(to left, #FCFBE8, #FCF8E8);
+}
+
+.App .board a :hover, .App .board a:active, .App .board td.selected a {
+  border:1px solid #E6E6D8;
+  color: #50B1F2;
+  box-shadow: inset 0 1px 0 0 #DEDDD9,inset 0 -1px 0 0 #E3DED5,inset 0 0 0 1px #FCFCF2;
+  -moz-box-shadow: inset 0 1px 0 0 #DEDDD9,inset 0 -1px 0 0 #E3DED5,inset 0 0 0 1px #FCFCF2;
+  -webkit-box-shadow: inset 0 1px 0 0 #DEDDD9,inset 0 -1px 0 0 #E3DED5,inset 0 0 0 1px #FCFCF2;
+  background-color: #fcce4a;
+  background-image: linear-gradient(to left, #fcce4a, #fcce4a);
+}
